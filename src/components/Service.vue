@@ -19,9 +19,9 @@
                     </a>
                 </template>
             </div>
-            <splitpanes :key="splitpaneKey" class="default-theme" @resize="resize" @resized="resized" :dbl-click-splitter="false">
+            <splitpanes :key="splitpaneKey" class="default-theme" @resize="resize" @resized="resized" :dbl-click-splitter="false" :push-other-panes="false">
                 <template v-for="(client, index) in distribution">
-                    <pane :size="client.share" :min-size="1">
+                    <pane :size="client.share">
                         <div :class="`h-10 ${client.name}`" v-tooltip="{
                             content: `${client.name} ${client.shareFormatted} (${client.count})`,
                             placement: (wavePattern && index % 2 === 1) ? 'bottom' : 'top',
