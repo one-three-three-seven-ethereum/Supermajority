@@ -3,11 +3,13 @@
         <div class="flex-1 flex flex-col">
             <div class="flex items-center">
                 <template v-if="service.name === 'Unknown'">
-                    <span class="mr-auto">{{ `Unlisted Entities (${service.marketShareFormatted})` }}</span>
+                    <span>Unlisted Entities</span>
                 </template>
                 <template v-else>
-                    <a :href="service.website" target="_blank" class="mr-auto">{{ `${service.name} (${service.marketShareFormatted})` }}</a>
+                    <a :href="service.website" target="_blank">{{ service.name }}</a>
                 </template>
+                <span class="ml-1 mr-auto text-base" v-tooltip="{ content: 'Market Share', delay: 0, triggers: ['hover', 'click'] }">({{ service.marketShareFormatted }})</span>
+
                 <template v-if="service.twitter">
                     <a :href="service.twitter" target="_blank" v-tooltip="{ content: 'Twitter', delay: 0 }">
                         <span class="pi pi-twitter text-blue-400"></span>
