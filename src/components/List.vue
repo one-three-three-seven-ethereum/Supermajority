@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-1 min-w-80 m-5">
+    <div class="flex-1 flex flex-col min-w-80 m-5">
         <div class="sticky top-0 bg-gray-100 z-50">
             <ul class="flex justify-around">
                 <template v-for="client in completeDistribution">
@@ -22,6 +22,8 @@
             <hr class="h-1 my-4 bg-gray-500">
         </div>
 
+        <span class="mb-4 text-base">Info: The list indirectly includes Lido by listing all its operators</span>
+
         <ul>
             <template v-for="service in sortedServices">
                 <li class="mb-2">
@@ -34,7 +36,7 @@
 
 <script setup lang="ts">
     import { useDistributionStore } from '@/stores/distribution'
-    import ServiceComponent from "@/components/Service.vue"
+    import ServiceComponent from '@/components/Service.vue'
     import Total from '@/components/Total.vue'
     import { storeToRefs } from 'pinia';
 

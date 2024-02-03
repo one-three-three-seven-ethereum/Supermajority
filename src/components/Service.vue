@@ -69,7 +69,7 @@
         const list: MenuItem[] = []
 
         options.forEach(name => {
-            if (!service.allocation.find(client => client.name === name)) {
+            if (!service.allocation.find(client => client.name === name.replace('rETH', 'Reth'))) { // Easter Egg
                 list.push({ label: name, command: addCommand })
             }
         })
