@@ -7,7 +7,7 @@
         <ul>
             <li>
                 <h3>What is this website about?</h3>
-                <span>The supermajority client risk of the execution layer, especially the client usage of staking services and pools.</span>
+                <span>The supermajority client risk of the Ethereum execution layer, especially the client usage of staking services and pools.</span>
             </li>
             <li>
                 <h3>What is the supermajority client risk?</h3>
