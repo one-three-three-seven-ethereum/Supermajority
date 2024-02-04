@@ -6,7 +6,7 @@ export const numberToPercent = new Intl.NumberFormat('en-US', {
     maximumFractionDigits: 1,
 })
 
-export const showGethTooltips = ref(false)
+export const showImportantTooltips = ref(false)
 
 export interface Distribution {
     name: string;

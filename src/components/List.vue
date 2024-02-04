@@ -1,28 +1,34 @@
 <template>
     <div class="flex-1 flex flex-col min-w-80 m-5">
-        <div class="sticky top-0 bg-gray-100 z-50">
-            <ul class="flex justify-around">
-                <template v-for="client in completeDistribution">
-                    <li class="flex flex-col">
-                        <div :class="`h-2 ${client.name}`" />
-                        <span class="text-lg">{{ client.name }}</span>
-                    </li>
-                </template>
-            </ul>
+        <ul class="flex justify-around">
+            <template v-for="client in completeDistribution">
+                <li class="flex flex-col">
+                    <div :class="`h-2 ${client.name}`" />
+                    <span class="text-lg">{{ client.name }}</span>
+                </li>
+            </template>
+        </ul>
 
-            <hr class="h-1 my-4 bg-gray-500">
+        <hr class="h-1 my-4 bg-zinc-500">
 
-            <span>Total</span>
-            <Total class="mb-2" :distribution="completeDistribution" />
+        <span>Total</span>
+        <Total class="mb-2" :distribution="completeDistribution" />
 
-            <span>Total excluding unknown clients</span>
-            <Total :distribution="knownDistribution" />
-            <span class="text-base">({{ knownDistributionShareFormatted }} coverage)</span>
+        <span>Total excluding unknown clients</span>
+        <Total :distribution="knownDistribution" />
+        <span class="text-base mb-4">{{ knownDistributionShareFormatted }} coverage</span>
 
-            <hr class="h-1 my-4 bg-gray-500">
+        <div class="sticky flex flex-col top-0 bg-gray-100 z-50">
+            <hr class="h-1 mb-4 bg-zinc-500">
+
+            <span>Known minority share of the whole network</span>
+            <Total :distribution="minorityOnly" />
+            <span class="text-base">Safe Minimum: 33.3%</span>
+
+            <hr class="h-1 mt-4 bg-zinc-500">
         </div>
 
-        <span class="mb-4 text-base">Info: The list indirectly includes Lido by listing all its operators</span>
+        <span class="my-4 text-base">Info: The list indirectly includes Lido by listing all its operators</span>
 
         <ul>
             <template v-for="service in sortedServices">
@@ -41,7 +47,7 @@
     import { storeToRefs } from 'pinia';
 
     const store = useDistributionStore()
-    const { knownDistribution, knownDistributionShareFormatted, completeDistribution, sortedServices } = storeToRefs(store)
+    const { knownDistribution, knownDistributionShareFormatted, completeDistribution, minorityOnly, sortedServices } = storeToRefs(store)
     const { fetchServices } = store
 
     await fetchServices()

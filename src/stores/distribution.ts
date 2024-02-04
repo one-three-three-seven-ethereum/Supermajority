@@ -41,6 +41,39 @@ export const useDistributionStore = defineStore('distribution', () => {
         return list
     }
 
+    const minorityOnly = computed(() => {
+        const list: Distribution[] = []
+
+        let minority = 0
+
+        allocation.value.forEach((count, name) => {
+            if (!['Geth', 'Unknown'].includes(name)) {
+                minority += count
+            }
+        })
+
+        let minorityShare = minority / totalValidators
+
+        list.push({
+            name: 'Minority',
+            count: minority,
+            share: minorityShare * 100,
+            shareFormatted: numberToPercent.format(minorityShare)
+        })
+
+        const majority = allocation.value.get('Geth')!
+        const majorityShare = majority / totalValidators
+
+        list.push({
+            name: 'Geth',
+            count: majority,
+            share: majorityShare * 100,
+            shareFormatted: numberToPercent.format(majorityShare)
+        })
+
+        return list
+    })
+
     // We know the client of these validators
     const knownValidators = computed(() => {
         let known = 0;
@@ -97,5 +130,5 @@ export const useDistributionStore = defineStore('distribution', () => {
         })
     }
 
-    return { sortedServices, knownDistribution: knownDistribution, knownDistributionShareFormatted, completeDistribution, fetchServices }
+    return { sortedServices, knownDistribution: knownDistribution, knownDistributionShareFormatted, completeDistribution, minorityOnly, fetchServices }
 })

@@ -68,6 +68,10 @@
         @apply bg-purple-500
     }
 
+    .Minority{
+        @apply bg-lime-500
+    }
+
     .Unknown {
         @apply bg-orange-500
     }
