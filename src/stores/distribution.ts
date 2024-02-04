@@ -2,7 +2,7 @@ import { numberToPercent, type Distribution, type Service } from '@/lib'
 import { ref, computed, type Ref } from 'vue'
 import { defineStore } from 'pinia'
 
-const totalValidators = 914433
+const totalValidators = 920424
 
 export const useDistributionStore = defineStore('distribution', () => {
     const services: Ref<Service[]> = ref([])
@@ -54,17 +54,6 @@ export const useDistributionStore = defineStore('distribution', () => {
         return known
     })
 
-    // These validators are included in any of the listed entities
-    const listedValidators = computed(() => {
-        let listed = 0;
-
-        allocation.value.forEach((count, name) => {
-            listed += count;
-        })
-
-        return listed
-    })
-
     const knownDistributionShareFormatted = computed(() => {
         return numberToPercent.format(knownValidators.value / totalValidators)
     })
@@ -91,14 +80,19 @@ export const useDistributionStore = defineStore('distribution', () => {
     })
 
     async function fetchServices() {
-        const data: Service[] = await (await fetch('/services.json')).json()
+        services.value = await (await fetch('/services.json')).json()
 
-        services.value = data
+        // These validators are included in the service.json
+        let included = 0;
+        allocation.value.forEach(count => {
+            included += count;
+        })
+
         services.value.push({
             name: 'Unknown',
             allocation: [{
                 name: 'Unknown',
-                count: totalValidators - listedValidators.value
+                count: totalValidators - included
             }]
         })
     }
