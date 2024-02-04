@@ -9,7 +9,6 @@
             }" />
 
             <template v-if="client.name === 'Minority'">
-                <div class="flex-1 h-0" />
                 <div class="absolute left-1/3 h-full w-1 bg-zinc-500" v-tooltip="{ content: '33.3%', triggers: ['hover', 'click'], delay: 0 }" />
                 <div class="absolute right-1/3 h-full w-1 bg-zinc-500" v-tooltip="{ content: '66.6%', triggers: ['hover', 'click'], delay: 0 }" />
             </template>

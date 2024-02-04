@@ -43,7 +43,6 @@ export const useDistributionStore = defineStore('distribution', () => {
 
     const minorityOnly = computed(() => {
         const list: Distribution[] = []
-
         let minority = 0
 
         allocation.value.forEach((count, name) => {
@@ -61,15 +60,8 @@ export const useDistributionStore = defineStore('distribution', () => {
             shareFormatted: numberToPercent.format(minorityShare)
         })
 
-        const majority = allocation.value.get('Geth')!
-        const majorityShare = majority / totalValidators
-
-        list.push({
-            name: 'Geth',
-            count: majority,
-            share: majorityShare * 100,
-            shareFormatted: numberToPercent.format(majorityShare)
-        })
+        list.push(completeDistribution.value.find(client => client.name === 'Unknown')!)
+        list.push(completeDistribution.value.find(client => client.name === 'Geth')!)
 
         return list
     })
