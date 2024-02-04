@@ -19,7 +19,7 @@ export const useDistributionStore = defineStore('distribution', () => {
         return map
     })
 
-    const knwonDistribution = computed(() => distribution(true))
+    const knownDistribution = computed(() => distribution(true))
     const completeDistribution = computed(() => distribution(false))
 
     const distribution = (knownOnly = false) => {
@@ -41,6 +41,7 @@ export const useDistributionStore = defineStore('distribution', () => {
         return list
     }
 
+    // We know the client of these validators
     const knownValidators = computed(() => {
         let known = 0;
 
@@ -51,6 +52,17 @@ export const useDistributionStore = defineStore('distribution', () => {
         })
 
         return known
+    })
+
+    // These validators are included in any of the listed entities
+    const listedValidators = computed(() => {
+        let listed = 0;
+
+        allocation.value.forEach((count, name) => {
+            listed += count;
+        })
+
+        return listed
     })
 
     const knownDistributionShareFormatted = computed(() => {
@@ -86,10 +98,10 @@ export const useDistributionStore = defineStore('distribution', () => {
             name: 'Unknown',
             allocation: [{
                 name: 'Unknown',
-                count: totalValidators - knownValidators.value
+                count: totalValidators - listedValidators.value
             }]
         })
     }
 
-    return { sortedServices, knwonDistribution, knownDistributionShareFormatted, completeDistribution, fetchServices }
+    return { sortedServices, knownDistribution: knownDistribution, knownDistributionShareFormatted, completeDistribution, fetchServices }
 })

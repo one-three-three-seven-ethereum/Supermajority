@@ -16,7 +16,7 @@
             <Total class="mb-2" :distribution="completeDistribution" />
 
             <span>Total excluding unknown clients</span>
-            <Total :distribution="knwonDistribution" />
+            <Total :distribution="knownDistribution" />
             <span class="text-base">({{ knownDistributionShareFormatted }} coverage)</span>
 
             <hr class="h-1 my-4 bg-gray-500">
@@ -41,7 +41,7 @@
     import { storeToRefs } from 'pinia';
 
     const store = useDistributionStore()
-    const { knwonDistribution, knownDistributionShareFormatted, completeDistribution, sortedServices } = storeToRefs(store)
+    const { knownDistribution, knownDistributionShareFormatted, completeDistribution, sortedServices } = storeToRefs(store)
     const { fetchServices } = store
 
     await fetchServices()
