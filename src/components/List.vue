@@ -23,7 +23,8 @@
 
             <span>Known minority share of the whole network</span>
             <Total :distribution="minorityOnly" />
-            <span class="text-base">Safe Minimum: 33.3%</span>
+            <span class="text-base font-bold">This is the most important metric!</span>
+            <span class="text-base">A minority client usage above 33.3% is necessary to completely eliminate the supermajority risk.</span>
 
             <hr class="h-1 mt-4 bg-zinc-500">
         </div>
