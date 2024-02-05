@@ -541,5 +541,20 @@
         "count": 4801
       }
     ]
+  },
+  {
+    "name": "Twinstake",
+    "website": "https://twinstake.io",
+    "source": "https://twinstake.io/contact",
+    "allocation": [
+      {
+        "name": "Geth",
+        "count": 6352
+      },
+      {
+        "name": "Nethermind",
+        "count": 6353
+      }
+    ]
   }
 ]
