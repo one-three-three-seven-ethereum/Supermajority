@@ -50,7 +50,6 @@
     import { computed, ref } from 'vue'
     import Menu from 'primevue/menu'
 
-
     const { service } = defineProps<({ service: Service })>()
 
     const wavePattern = ref(false)
