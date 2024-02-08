@@ -14,14 +14,14 @@
         <span>Total</span>
         <Total class="mb-2" :distribution="completeDistribution" />
 
-        <span>Total excluding unknown clients</span>
+        <span>Known clients only</span>
         <Total :distribution="knownDistribution" />
-        <span class="text-base mb-4">{{ knownDistributionShareFormatted }} coverage</span>
+        <span class="text-base mb-4 font-bold">{{ knownDistributionShareFormatted }} coverage</span>
 
         <div class="sticky flex flex-col top-0 bg-gray-100 z-50">
             <hr class="h-1 mb-4 bg-zinc-500">
 
-            <span>Known minority share of the whole network</span>
+            <span>Total minority share</span>
             <Total :distribution="minorityOnly" />
             <span class="text-base font-bold">This is the most important metric!</span>
             <span class="text-base">A minority client usage above 33.3% is necessary to completely eliminate the supermajority risk.</span>
@@ -29,7 +29,7 @@
             <hr class="h-1 mt-4 bg-zinc-500">
         </div>
 
-        <span class="my-4 text-base">Info: The list indirectly includes Lido by listing all its operators</span>
+        <span class="my-4 text-base">Info: The list indirectly includes Lido (<a class="text-base link" href="https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest?tab=client-diversity#execution-layer" target="_blank">view data</a>) by listing all its operators</span>
 
         <ul>
             <template v-for="service in sortedServices">
