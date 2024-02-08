@@ -16,7 +16,7 @@
 
         <span>Known clients only</span>
         <Total :distribution="knownDistribution" />
-        <span class="text-base mb-4 font-bold">{{ knownDistributionShareFormatted }} coverage</span>
+        <span class="text-base mb-4 font-bold">Only {{ knownDistributionShareFormatted }} network coverage, high degree of inaccuracy!</span>
 
         <div class="sticky flex flex-col top-0 bg-gray-100 z-50">
             <hr class="h-1 mb-4 bg-zinc-500">
