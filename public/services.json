@@ -556,5 +556,24 @@
         "count": 6353
       }
     ]
+  },
+  {
+    "name": "Ankr",
+    "website": "https://ankr.com",
+    "source": "https://twitter.com/ankrstaking/status/1757012652595786027",
+    "allocation": [
+      {
+        "name": "Geth",
+        "count": 213
+      },
+      {
+        "name": "Nethermind",
+        "count": 427
+      },
+      {
+        "name": "Unknown",
+        "count": 71
+      }
+    ]
   }
 ]
