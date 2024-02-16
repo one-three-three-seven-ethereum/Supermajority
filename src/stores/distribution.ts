@@ -2,7 +2,7 @@ import { numberToPercent, type Distribution, type Service } from '@/lib'
 import { ref, computed, type Ref } from 'vue'
 import { defineStore } from 'pinia'
 
-const totalValidators = 920424
+const totalValidators = 944550
 
 export const useDistributionStore = defineStore('distribution', () => {
     const services: Ref<Service[]> = ref([])
