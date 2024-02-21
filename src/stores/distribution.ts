@@ -122,5 +122,5 @@ export const useDistributionStore = defineStore('distribution', () => {
         })
     }
 
-    return { sortedServices, knownDistribution: knownDistribution, knownDistributionShareFormatted, completeDistribution, minorityOnly, fetchServices }
+    return { sortedServices, knownDistribution, knownDistributionShareFormatted, completeDistribution, minorityOnly, fetchServices }
 })

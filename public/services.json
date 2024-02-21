@@ -613,6 +613,7 @@
     "name": "Twinstake",
     "website": "https://twinstake.io",
     "source": "https://twinstake.io/contact",
+    "twitter": "https://twitter.com/twinstake_io",
     "allocation": [
       {
         "name": "Geth",
@@ -628,6 +629,7 @@
     "name": "Ankr",
     "website": "https://ankr.com",
     "source": "https://twitter.com/ankrstaking/status/1757012652595786027",
+    "twitter": "https://twitter.com/ankrstaking",
     "allocation": [
       {
         "name": "Geth",
@@ -640,6 +642,22 @@
       {
         "name": "Unknown",
         "count": 71
+      }
+    ]
+  },
+  {
+    "name": "Octant",
+    "website": "https://octant.build",
+    "source": "https://discord.com/channels/694822223575384095/933102729952395344/1209779276921184277",
+    "twitter": "https://twitter.com/octantapp",
+    "allocation": [
+      {
+        "name": "Geth",
+        "count": 1568
+      },
+      {
+        "name": "Nethermind",
+        "count": 1568
       }
     ]
   }
