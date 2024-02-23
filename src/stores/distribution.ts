@@ -60,8 +60,16 @@ export const useDistributionStore = defineStore('distribution', () => {
             shareFormatted: numberToPercent.format(minorityShare)
         })
 
-        list.push(completeDistribution.value.find(client => client.name === 'Unknown')!)
-        list.push(completeDistribution.value.find(client => client.name === 'Geth')!)
+        const unknown = completeDistribution.value.find(client => client.name === 'Unknown')
+        const geth = completeDistribution.value.find(client => client.name === 'Geth')
+
+        if (unknown !== undefined) {
+            list.push(unknown)
+        }
+
+        if (geth !== undefined) {
+            list.push(geth)
+        }
 
         return list
     })
