@@ -652,12 +652,8 @@
     "twitter": "https://twitter.com/octantapp",
     "allocation": [
       {
-        "name": "Geth",
-        "count": 1568
-      },
-      {
         "name": "Nethermind",
-        "count": 1568
+        "count": 3136
       }
     ]
   }
