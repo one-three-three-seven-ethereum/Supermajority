@@ -14,7 +14,7 @@
         <span>Total</span>
         <Total class="mb-2" :distribution="completeDistribution" />
 
-        <span>Known clients only</span>
+        <span>Known usage only</span>
         <Total :distribution="knownDistribution" />
         <span class="text-base mb-4 font-bold">Only {{ knownDistributionShareFormatted }} network coverage, high degree of inaccuracy!</span>
 
