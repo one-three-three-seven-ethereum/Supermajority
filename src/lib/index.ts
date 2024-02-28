@@ -2,13 +2,23 @@ import { ref } from "vue";
 
 export const numberToPercent = new Intl.NumberFormat('en-US', {
     style: 'percent',
-    minimumFractionDigits: 0,
+    minimumFractionDigits: 1,
     maximumFractionDigits: 1,
 })
 
 export const showImportantTooltips = ref(false)
 
-export interface Distribution {
+export interface TotalDistribution {
+    name: string;
+    countMin: number;
+    countMax: number;
+    shareMin: number;
+    shareMax: number;
+    shareMinFormatted: string;
+    shareMaxFormatted: string;
+}
+
+export interface ServiceDistribution {
     name: string;
     count: number;
     share: number;

@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-    import { numberToPercent, showImportantTooltips, type Distribution, type Service } from '@/lib'
+    import { numberToPercent, showImportantTooltips, type ServiceDistribution, type Service } from '@/lib'
     import type { MenuItem, MenuItemCommandEvent } from 'primevue/menuitem'
     import { Splitpanes, Pane } from 'splitpanes'
     import Button from 'primevue/button'
@@ -90,7 +90,7 @@
     })
 
     const distribution = computed(() => {
-        const list: Distribution[] = []
+        const list: ServiceDistribution[] = []
 
         service.allocation.forEach(client => {
             const share = client.count / totalCount.value
