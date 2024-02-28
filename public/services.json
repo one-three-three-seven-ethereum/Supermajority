@@ -251,11 +251,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 28111
+        "count": 20484
       },
       {
         "name": "Nethermind",
-        "count": 8906
+        "count": 20567
       }
     ]
   },
@@ -549,12 +549,16 @@
   {
     "name": "Coinbase",
     "website": "https://www.coinbase.com/earn/staking/ethereum",
-    "source": "https://www.coinbase.com/de/cloud/discover/customer-stories/cb-wallet",
+    "source": "https://www.coinbase.com/de/cloud/discover/insights-analysis/execution-client-diversity",
     "twitter": "https://twitter.com/coinbase",
     "allocation": [
       {
         "name": "Geth",
-        "count": 139660
+        "count": 126410
+      },
+      {
+        "name": "Nethermind",
+        "count": 14046
       }
     ]
   },
