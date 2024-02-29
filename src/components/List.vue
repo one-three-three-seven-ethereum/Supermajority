@@ -8,6 +8,7 @@
             <template v-for="client in distribution">
                 <div class="flex justify-between">
                     <span>{{ client.name }}</span>
+                    <span class="font-bold" v-if="client.shareMax >= 2 / 3 * 100">Risky!</span>
                     <span>Min: {{ client.shareMinFormatted }} | Max: {{ client.shareMaxFormatted }}</span>
                 </div>
 
