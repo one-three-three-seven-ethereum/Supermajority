@@ -2,8 +2,8 @@
     <div class="flex">
         <div class="flex-1 flex flex-col">
             <div class="flex items-center">
-                <template v-if="service.name === 'Unknown'">
-                    <span>Unlisted Entities</span>
+                <template v-if="!service.website">
+                    <span>{{ service.name }}</span>
                 </template>
                 <template v-else>
                     <a :href="service.website" target="_blank">{{ service.name }}</a>
@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-    import { numberToPercent, showImportantTooltips, type ServiceDistribution, type Service } from '@/lib'
+    import { numberToPercent, type ServiceDistribution, type Service } from '@/lib'
     import type { MenuItem, MenuItemCommandEvent } from 'primevue/menuitem'
     import { Splitpanes, Pane } from 'splitpanes'
     import Button from 'primevue/button'
@@ -119,7 +119,6 @@
     function resize(event: any) {
         showTooltips.value = true
         wavePattern.value = true
-        showImportantTooltips.value = true
         const previousTotalCount = totalCount.value // totalCount changes during the for loop; a copy of it is needed
 
         for (let i = 0; i < service.allocation.length; i++) {
@@ -129,7 +128,6 @@
 
     function resized() {
         showTooltips.value = false
-        showImportantTooltips.value = false
 
         // Disable the wave pattern after all tooltips have disappeared
         setTimeout(() => {

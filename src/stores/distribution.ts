@@ -19,11 +19,13 @@ export const useDistributionStore = defineStore('distribution', () => {
         return map
     })
 
+    const unknownCount = computed(() => allocation.value.get('Unknown') || 0)
+
     const distribution = computed(() => {
         const list: TotalDistribution[] = []
 
         allocation.value.forEach((count, name) => {
-            if (count && name !== 'Unknown') {
+            if (name !== 'Unknown') {
                 const shareMin = count / totalValidators
                 const shareMax = (count + unknownCount.value) / totalValidators
 
@@ -41,8 +43,6 @@ export const useDistributionStore = defineStore('distribution', () => {
 
         return list
     })
-
-    const unknownCount = computed(() => allocation.value.get('Unknown') || 0)
 
     const sortedServices = computed(() => {
         const copy = [...services.value]
@@ -69,13 +69,13 @@ export const useDistributionStore = defineStore('distribution', () => {
         services.value = await (await fetch('/services.json')).json()
 
         // These validators are included in the service.json
-        let included = 0;
+        let included = 0
         allocation.value.forEach(count => {
-            included += count;
+            included += count
         })
 
         services.value.push({
-            name: 'Unknown',
+            name: 'Unlisted Entities',
             allocation: [{
                 name: 'Unknown',
                 count: totalValidators - included

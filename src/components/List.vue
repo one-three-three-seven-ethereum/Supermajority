@@ -3,6 +3,8 @@
         <div class="sticky flex flex-col top-0 bg-gray-100 z-50">
             <hr class="h-1 mb-4 bg-zinc-500">
 
+            <span class="mb-2 text-base">Info: No client should have a possible share ("Max") above 66.6%!</span>
+
             <template v-for="client in distribution">
                 <div class="flex justify-between">
                     <span>{{ client.name }}</span>
