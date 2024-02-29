@@ -14,7 +14,7 @@
                 <span>A client software that is used by more than 2/3 of all active validators is considered a supermajority
                     client. It has the capability to finalize the chain without the agreement of the other clients. A consensus
                     bug within such a client would cause catastrophic results, such as a network split, loss of funds, and
-                    reputation damage. Geth is such a client right now.</span>
+                    reputation damage. Geth might be such a client right now.</span>
 
                 <span>Detailed explanations can be found at the end of this page.</span>
             </li>
@@ -30,7 +30,7 @@
             </li>
             <li>
                 <h3>What can I do as a validator operator?</h3>
-                <span>Do not use Geth.</span>
+                <span>Use minority clients.</span>
             </li>
             <li>
                 <h3>If I switch to a minority client, where can I find support?</h3>

@@ -1,4 +1,4 @@
-import { numberToPercent, type Distribution, type Service } from '@/lib'
+import { numberToPercent, type TotalDistribution, type Service } from '@/lib'
 import { ref, computed, type Ref } from 'vue'
 import { defineStore } from 'pinia'
 
@@ -19,76 +19,29 @@ export const useDistributionStore = defineStore('distribution', () => {
         return map
     })
 
-    const knownDistribution = computed(() => distribution(true))
-    const completeDistribution = computed(() => distribution(false))
+    const unknownCount = computed(() => allocation.value.get('Unknown') || 0)
 
-    const distribution = (knownOnly = false) => {
-        const list: Distribution[] = []
+    const distribution = computed(() => {
+        const list: TotalDistribution[] = []
 
         allocation.value.forEach((count, name) => {
-            if (count && !(knownOnly && name === 'Unknown')) {
-                const share = count / ((knownOnly) ? knownValidators.value : totalValidators)
+            if (name !== 'Unknown') {
+                const shareMin = count / totalValidators
+                const shareMax = (count + unknownCount.value) / totalValidators
 
                 list.push({
                     name,
-                    count,
-                    share: share * 100,
-                    shareFormatted: numberToPercent.format(share)
+                    countMin: count,
+                    countMax: count + unknownCount.value,
+                    shareMin: shareMin * 100,
+                    shareMax: shareMax * 100,
+                    shareMinFormatted: numberToPercent.format(shareMin),
+                    shareMaxFormatted: numberToPercent.format(shareMax)
                 })
             }
         })
 
         return list
-    }
-
-    const minorityOnly = computed(() => {
-        const list: Distribution[] = []
-        let minority = 0
-
-        allocation.value.forEach((count, name) => {
-            if (!['Geth', 'Unknown'].includes(name)) {
-                minority += count
-            }
-        })
-
-        let minorityShare = minority / totalValidators
-
-        list.push({
-            name: 'Minority',
-            count: minority,
-            share: minorityShare * 100,
-            shareFormatted: numberToPercent.format(minorityShare)
-        })
-
-        const unknown = completeDistribution.value.find(client => client.name === 'Unknown')
-        const geth = completeDistribution.value.find(client => client.name === 'Geth')
-
-        if (unknown !== undefined) {
-            list.push(unknown)
-        }
-
-        if (geth !== undefined) {
-            list.push(geth)
-        }
-
-        return list
-    })
-
-    // We know the client of these validators
-    const knownValidators = computed(() => {
-        let known = 0;
-
-        allocation.value.forEach((count, name) => {
-            if (name !== 'Unknown') {
-                known += count;
-            }
-        })
-
-        return known
-    })
-
-    const knownDistributionShareFormatted = computed(() => {
-        return numberToPercent.format(knownValidators.value / totalValidators)
     })
 
     const sortedServices = computed(() => {
@@ -116,13 +69,13 @@ export const useDistributionStore = defineStore('distribution', () => {
         services.value = await (await fetch('/services.json')).json()
 
         // These validators are included in the service.json
-        let included = 0;
+        let included = 0
         allocation.value.forEach(count => {
-            included += count;
+            included += count
         })
 
         services.value.push({
-            name: 'Unknown',
+            name: 'Unlisted Entities',
             allocation: [{
                 name: 'Unknown',
                 count: totalValidators - included
@@ -130,5 +83,5 @@ export const useDistributionStore = defineStore('distribution', () => {
         })
     }
 
-    return { sortedServices, knownDistribution, knownDistributionShareFormatted, completeDistribution, minorityOnly, fetchServices }
+    return { sortedServices, distribution, fetchServices }
 })
