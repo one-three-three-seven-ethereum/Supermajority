@@ -550,11 +550,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 126410
+        "count": 104979
       },
       {
         "name": "Nethermind",
-        "count": 14046
+        "count": 34993
       }
     ]
   },
