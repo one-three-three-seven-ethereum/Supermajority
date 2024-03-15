@@ -44,7 +44,7 @@
         <span class="text-base">*Coinbase will reduce their Geth usage to 50% in the coming weeks.</span>
     </template>
     <template v-if="['Kraken', 'OKX', 'Bitcoin Suisse', 'Binance'].includes(service.name)">
-        <span class="text-base text-red-600 font-bold">*Risky! No public data available.</span>
+        <span class="text-base font-bold">*Risky! No public data available.</span>
     </template>
 </template>
 
