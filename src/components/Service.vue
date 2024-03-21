@@ -40,9 +40,6 @@
         <Button icon="pi pi-minus" class="bg-orange-400 ml-2 self-end rounded-full w-8 h-8 mb-1" :disabled="removeMenuItems.length === 1" @click="toggleRemoveMenu" />
         <Menu ref="removeMenu" :model="removeMenuItems" :popup="true" />
     </div>
-    <template v-if="service.name === 'Coinbase'">
-        <span class="text-base">*Coinbase will reduce their Geth usage to 50% in the coming weeks.</span>
-    </template>
     <template v-if="['Kraken', 'OKX', 'Bitcoin Suisse', 'Binance'].includes(service.name)">
         <span class="text-base font-bold">*Risky! No public data available.</span>
     </template>
