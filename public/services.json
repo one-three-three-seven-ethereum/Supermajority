@@ -545,16 +545,16 @@
   {
     "name": "Coinbase",
     "website": "https://www.coinbase.com/earn/staking/ethereum",
-    "source": "https://www.coinbase.com/de/cloud/discover/insights-analysis/execution-client-diversity",
+    "source": "https://twitter.com/CoinbaseCloud/status/1770866720246219152",
     "twitter": "https://twitter.com/coinbase",
     "allocation": [
       {
         "name": "Geth",
-        "count": 104979
+        "count": 69678
       },
       {
         "name": "Nethermind",
-        "count": 34993
+        "count": 69678
       }
     ]
   },
