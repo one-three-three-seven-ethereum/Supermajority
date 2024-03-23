@@ -421,16 +421,20 @@
   {
     "name": "Sigma Prime",
     "website": "https://sigmaprime.io",
-    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "source": "https://twitter.com/dapplion/status/1771561991863144532",
     "twitter": "https://twitter.com/sigp_io",
     "allocation": [
       {
         "name": "Geth",
-        "count": 2818
+        "count": 1876
       },
       {
         "name": "Nethermind",
-        "count": 7183
+        "count": 5629
+      },
+      {
+        "name": "Besu",
+        "count": 1876
       }
     ]
   },
