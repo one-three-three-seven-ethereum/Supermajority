@@ -457,12 +457,16 @@
   {
     "name": "Stakefish",
     "website": "https://stake.fish",
-    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "source": "https://discord.com/channels/694822223575384095/933102729952395344/1223363418174787644",
     "twitter": "https://twitter.com/stakefish",
     "allocation": [
       {
         "name": "Geth",
-        "count": 8490
+        "count": 10796
+      },
+      {
+        "name": "Nethermind",
+        "count": 10796
       }
     ]
   },
