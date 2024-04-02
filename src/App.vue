@@ -1,7 +1,7 @@
 <template>
     <h1 class="mx-auto mt-5 text-center">The Ethereum Supermajority Risk</h1>
     <h4 class="mx-auto mt-1 mb-2 text-center">(Maintained by Sonic)</h4>
-    <a href="https://github.com/one-three-three-seven/Supermajority" class="mx-auto" target="_blank">
+    <a href="https://github.com/one-three-three-seven-ethereum/Supermajority" class="mx-auto" target="_blank">
         <span class="pi pi-github text-2xl" />
     </a>
     <div class="flex flex-wrap justify-center">
