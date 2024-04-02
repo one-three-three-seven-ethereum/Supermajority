@@ -130,12 +130,16 @@
   {
     "name": "Consensys",
     "website": "https://consensys.io",
-    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "source": "https://research.lido.fi/t/ethereum-node-operator-el-diversity-improvement-commitments/6459/27",
     "twitter": "https://twitter.com/consensys",
     "allocation": [
       {
         "name": "Geth",
-        "count": 8875
+        "count": 14700
+      },
+      {
+        "name": "Besu",
+        "count": 20300
       }
     ]
   },
