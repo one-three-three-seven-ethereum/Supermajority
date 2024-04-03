@@ -262,12 +262,16 @@
   {
     "name": "Kukis Global",
     "website": "https://kukis-global.com",
-    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "source": "https://kukis-global.com",
     "twitter": "https://twitter.com/KukisGlobal",
     "allocation": [
       {
         "name": "Geth",
-        "count": 10001
+        "count": 5000
+      },
+      {
+        "name": "Nethermind",
+        "count": 5000
       }
     ]
   },
