@@ -43,6 +43,9 @@
     <template v-if="['Kraken', 'OKX', 'Binance'].includes(service.name)">
         <span class="text-base font-bold">*Risky! No public data available.</span>
     </template>
+    <template v-if="['Bitcoin Suisse'].includes(service.name)">
+        <span class="text-base font-bold">*Geth usage will be reduced further in the coming weeks.</span>
+    </template>
 </template>
 
 <script setup lang="ts">

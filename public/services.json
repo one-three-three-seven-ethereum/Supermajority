@@ -577,12 +577,16 @@
   {
     "name": "Bitcoin Suisse",
     "website": "https://bitcoinsuisse.com",
-    "source": "https://discord.com/channels/694822223575384095/933102729952395344/1224708518251069440",
+    "source": "https://discord.com/channels/694822223575384095/933102729952395344/1230486478795046943",
     "twitter": "https://twitter.com/bitcoinsuisseag",
     "allocation": [
       {
         "name": "Geth",
-        "count": 14036
+        "count": 12520
+      },
+      {
+        "name": "Besu",
+        "count": 1391
       }
     ]
   },
