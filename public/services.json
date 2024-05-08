@@ -206,12 +206,12 @@
   {
     "name": "Figment",
     "website": "https://figment.io",
-    "source": "https://figment.io/insights/navigating-the-nethermind-execution-client-issue/",
+    "source": "https://twitter.com/Figment_io/status/1787534701617414422",
     "twitter": "https://twitter.com/Figment_io",
     "allocation": [
       {
-        "name": "Geth",
-        "count": 9612
+        "name": "Erigon",
+        "count": 9620
       }
     ]
   },
