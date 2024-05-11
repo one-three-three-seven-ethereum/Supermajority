@@ -7,11 +7,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 3816
+        "count": 4300
       },
       {
         "name": "Nethermind",
-        "count": 4666
+        "count": 4679
       }
     ]
   },
@@ -23,7 +23,7 @@
     "allocation": [
       {
         "name": "Besu",
-        "count": 25828
+        "count": 27722
       }
     ]
   },
@@ -35,11 +35,11 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 5000
+        "count": 4490
       },
       {
         "name": "Besu",
-        "count": 5001
+        "count": 4490
       }
     ]
   },
@@ -51,7 +51,7 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 10001
+        "count": 8978
       }
     ]
   },
@@ -63,11 +63,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 9444
+        "count": 8635
       },
       {
         "name": "Nethermind",
-        "count": 359
+        "count": 343
       }
     ]
   },
@@ -79,7 +79,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 9180
+        "count": 2693
+      }, 
+      {
+        "name": "Nethermind",
+        "count": 6285
       }
     ]
   },
@@ -91,11 +95,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 7238
+        "count": 7480
       },
       {
         "name": "Nethermind",
-        "count": 1678
+        "count": 1498
       }
     ]
   },
@@ -107,11 +111,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 7400
+        "count": 2963
       },
       {
         "name": "Nethermind",
-        "count": 2600
+        "count": 3592
+      },
+      {
+        "name": "Besu",
+        "count": 2424
       }
     ]
   },
@@ -123,7 +131,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 9907
+        "count": 5612
+      },
+      {
+        "name": "Nethermind",
+        "count": 1122
+      },
+      {
+        "name": "Besu",
+        "count": 2244
       }
     ]
   },
@@ -151,11 +167,11 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 7336
+        "count": 6542
       },
       {
         "name": "Besu",
-        "count": 3669
+        "count": 3276
       }
     ]
   },
@@ -167,11 +183,25 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 7659
+        "count": 7889
       },
       {
         "name": "Nethermind",
-        "count": 2218
+        "count": 1089
+      }
+    ]
+  },
+  {
+    "name": "Develp",
+    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "allocation": [
+      {
+        "name": "Geth",
+        "count": 50
+      },
+      {
+        "name": "Nethermind",
+        "count": 50
       }
     ]
   },
@@ -183,7 +213,7 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 8861
+        "count": 6979
       }
     ]
   },
@@ -195,11 +225,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 4039
+        "count": 4054
       },
       {
         "name": "Nethermind",
-        "count": 4901
+        "count": 4924
       }
     ]
   },
@@ -223,11 +253,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 33
+        "count": 50
       },
       {
         "name": "Nethermind",
-        "count": 467
+        "count": 400
+      },
+      {
+        "name": "Erigon",
+        "count": 50
       }
     ]
   },
@@ -239,39 +273,43 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 10001
+        "count": 4478
+      },
+      {
+        "name": "Besu",
+        "count": 4500
       }
     ]
   },
   {
     "name": "Kiln",
     "website": "https://kiln.fi",
-    "source": "https://research.lido.fi/t/ethereum-node-operator-el-diversity-improvement-commitments/6459/24",
+    "source": "https://twitter.com/Kiln_finance/status/1762841341254373598",
     "twitter": "https://twitter.com/Kiln_finance",
     "allocation": [
       {
         "name": "Geth",
-        "count": 20484
+        "count": 21292
       },
       {
         "name": "Nethermind",
-        "count": 20567
+        "count": 21378
       }
     ]
   },
   {
     "name": "Kukis Global",
     "website": "https://kukis-global.com",
-    "source": "https://kukis-global.com",
+    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
     "twitter": "https://twitter.com/KukisGlobal",
     "allocation": [
       {
         "name": "Geth",
-        "count": 5000
+        "count": 5001
       },
       {
         "name": "Nethermind",
-        "count": 5000
+        "count": 3978
       }
     ]
   },
@@ -283,11 +321,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 1562
+        "count": 990
       },
       {
         "name": "Besu",
-        "count": 1000
+        "count": 1572
       }
     ]
   },
@@ -299,7 +337,7 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 10001
+        "count": 12245
       }
     ]
   },
@@ -310,15 +348,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 1333
+        "count": 2993
       },
       {
         "name": "Nethermind",
-        "count": 1334
+        "count": 2992
       },
       {
         "name": "Erigon",
-        "count": 1333
+        "count": 2994
       }
     ]
   },
@@ -329,8 +367,12 @@
     "twitter": "https://twitter.com/p2pvalidator",
     "allocation": [
       {
+        "name": "Geth",
+        "count": 8978
+      },
+      {
         "name": "Besu",
-        "count": 17674
+        "count": 26886
       }
     ]
   },
@@ -342,7 +384,7 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 8170
+        "count": 8979
       }
     ]
   },
@@ -354,7 +396,7 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 10001
+        "count": 8979
       }
     ]
   },
@@ -366,19 +408,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 4500
+        "count": 3266
       },
       {
         "name": "Nethermind",
-        "count": 1500
+        "count": 2856
       },
       {
         "name": "Besu",
-        "count": 2000
-      },
-      {
-        "name": "Erigon",
-        "count": 558
+        "count": 2856
       }
     ]
   },
@@ -390,11 +428,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 9917
+        "count": 6900
       },
       {
         "name": "Nethermind",
-        "count": 977
+        "count": 2078
       }
     ]
   },
@@ -405,8 +443,12 @@
     "twitter": "https://twitter.com/rockaway_x",
     "allocation": [
       {
+        "name": "Geth",
+        "count": 4490
+      },
+      {
         "name": "Nethermind",
-        "count": 5500
+        "count": 4489
       }
     ]
   },
@@ -418,11 +460,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 3300
+        "count": 2800
       },
       {
         "name": "Nethermind",
-        "count": 3700
+        "count": 5700
       }
     ]
   },
@@ -434,15 +476,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 1876
+        "count": 1000
       },
       {
         "name": "Nethermind",
-        "count": 5629
+        "count": 6550
       },
       {
         "name": "Besu",
-        "count": 1876
+        "count": 1429
       }
     ]
   },
@@ -454,11 +496,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 6797
+        "count": 5353
       },
       {
         "name": "Nethermind",
-        "count": 2875
+        "count": 3625
       }
     ]
   },
@@ -470,11 +512,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 10796
+        "count": 11797
       },
       {
         "name": "Nethermind",
-        "count": 10796
+        "count": 11797
       }
     ]
   },
@@ -486,15 +528,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 3792
+        "count": 3000
       },
       {
         "name": "Nethermind",
-        "count": 4876
+        "count": 4001
       },
       {
         "name": "Erigon",
-        "count": 2167
+        "count": 1978
       }
     ]
   },
@@ -506,7 +548,7 @@
     "allocation": [
       {
         "name": "Besu",
-        "count": 10000
+        "count": 8979
       }
     ]
   },
@@ -530,7 +572,7 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 3319
+        "count": 3291
       }
     ]
   },
@@ -542,19 +584,19 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 7878
+        "count": 7248
       },
       {
         "name": "Nethermind",
-        "count": 6364
+        "count": 5760
       },
       {
         "name": "Besu",
-        "count": 2848
+        "count": 2737
       },
       {
         "name": "Unknown",
-        "count": 6307
+        "count": 6381
       }
     ]
   },
@@ -566,11 +608,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 69678
+        "count": 68959
       },
       {
         "name": "Nethermind",
-        "count": 69678
+        "count": 68959
       }
     ]
   },
@@ -582,11 +624,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 12520
+        "count": 6718
+      },
+      {
+        "name": "Nethermind",
+        "count": 3639
       },
       {
         "name": "Besu",
-        "count": 1391
+        "count": 3639
       }
     ]
   },
@@ -597,7 +643,7 @@
     "allocation": [
       {
         "name": "Unknown",
-        "count": 24693
+        "count": 24235
       }
     ]
   },
@@ -608,7 +654,7 @@
     "allocation": [
       {
         "name": "Unknown",
-        "count": 39493
+        "count": 35163
       }
     ]
   },
@@ -619,18 +665,7 @@
     "allocation": [
       {
         "name": "Unknown",
-        "count": 14694
-      }
-    ]
-  },
-  {
-    "name": "Blox Staking",
-    "website": "https://bloxstaking.com",
-    "source": "https://discord.com/channels/973544250828546069/1146751094433787964/1199615241949036604",
-    "allocation": [
-      {
-        "name": "Geth",
-        "count": 4763
+        "count": 10999
       }
     ]
   },
@@ -642,11 +677,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 5605
+        "count": 4483
       },
       {
         "name": "Nethermind",
-        "count": 5605
+        "count": 4483
       }
     ]
   },
