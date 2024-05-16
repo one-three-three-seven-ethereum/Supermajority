@@ -284,16 +284,12 @@
   {
     "name": "Kiln",
     "website": "https://kiln.fi",
-    "source": "https://twitter.com/Kiln_finance/status/1762841341254373598",
+    "source": "https://discord.com/channels/694822223575384095/933102729952395344/1240690036580548760",
     "twitter": "https://twitter.com/Kiln_finance",
     "allocation": [
       {
-        "name": "Geth",
-        "count": 21292
-      },
-      {
         "name": "Nethermind",
-        "count": 21378
+        "count": 42668
       }
     ]
   },
