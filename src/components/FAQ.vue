@@ -14,19 +14,19 @@
                 <span>A client software that is used by more than 2/3 of all active validators is considered a supermajority
                     client. It has the capability to finalize the chain without the agreement of the other clients. A consensus
                     bug within such a client would cause catastrophic results, such as a network split, loss of funds, and
-                    reputation damage. Geth might be such a client right now.</span>
+                    reputation damage.</span>
 
                 <span>Detailed explanations can be found at the end of this page.</span>
             </li>
             <li>
                 <h3>Why should I care about this?</h3>
-                <span>You could lose most of your funds if Geth is used for validator duties by you or your pool/service/LST.</span>
+                <span>You could lose most of your funds if a supermajority client is used for validator duties by you or your pool/service/LST.</span>
             </li>
             <li>
                 <h3>What can I do as a staking pool/service user?</h3>
                 <span>Ask the operator which client it is using and let them know that you are concerned about the
                     supermajority client risk.</span>
-                <span>Consider using a pool/service that prioritizes client diversity. The lower the Geth usage, the lower the risk.</span>
+                <span>Consider using a pool/service that prioritizes client diversity.</span>
             </li>
             <li>
                 <h3>What can I do as a validator operator?</h3>
@@ -35,7 +35,6 @@
             <li>
                 <h3>If I switch to a minority client, where can I find support?</h3>
                 <span>All of the clients have dedicated Discord communities where help is provided by the team and other users.</span>
-                <a href="https://discord.com/invite/PaCMRFdvWT">Nethermind</a>
                 <a href="https://discord.com/invite/hyperledger">Besu</a>
                 <a href="https://github.com/ledgerwatch/erigon#erigon-discord-server">Erigon</a>
             </li>
@@ -71,7 +70,7 @@
             </li>
             <li>
                 <h3>Where can I find more info?</h3>
-                <span>A good place for all kinds of questions related to this topic is the <span class="font-semibold">#supermajority-risk</span> channel at the
+                <span>A good place for all kinds of questions related to this topic is the <span class="font-semibold">#nonfinality-risk</span> channel at the
                     <a href="https://discord.gg/ethstaker">EthStaker Discord</a>.</span>
                 <span>There are numerous existing resources on this topic. Please note that some of them are written for the
                     consensus layer, but they mostly apply to the execution layer as well.</span>
