@@ -2,7 +2,7 @@
     <div v-if="showFAQ" class="flex-1 min-w-80 m-5">
         <div class="flex justify-between">
             <h2>FAQ</h2>
-            <Button type="button" icon="pi pi-times" class="bg-blue-500 text-white p-1" @click="() => showFAQ = false" v-tooltip="{ content: 'Hide FAQ', delay: 0 }" />
+            <Button type="button" icon="pi pi-times" severity="secondary" outlined class="w-8 h-8" @click="() => showFAQ = false" v-tooltip="{ content: 'Hide FAQ', delay: 0 }" />
         </div>
         <ul>
             <li>
