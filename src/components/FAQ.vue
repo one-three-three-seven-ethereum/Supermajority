@@ -103,7 +103,8 @@
     }
 
     ul>li>span {
-        @apply mb-2 block
+        display: block;
+        margin-bottom: 0.5rem;
     }
 
     a {
