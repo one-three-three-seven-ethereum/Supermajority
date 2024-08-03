@@ -78,9 +78,9 @@
                 <a href="https://eth2book.info/bellatrix/part2/incentives/diversity/" target="_blank">[2] eth2book.info - Diversity</a>
                 <a href="https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA" target="_blank">[3] jmcook.eth - Client diversity on Ethereum's consensus layer</a>
                 <a href="https://labrys.io/insights/geth-staking" target="_blank">Yes, you really can lose all your ETH if you stake with Geth</a>
-                <a href="https://www.kiln.fi/post/ethereum-client-diversity-part-1-consensus-finalization">Ethereum Client Diversity Part 1: Consensus and Finalization</a>
-                <a href="https://www.kiln.fi/post/ethereum-client-diversity-part-2-execution-layer-diversity">Ethereum Client Diversity Part 2: Execution-layer Diversity</a>
-                <a href="https://www.kiln.fi/post/ethereum-client-diversity-part-3-consensus-layer-diversity">Ethereum Client Diversity Part 3: Consensus-layer Diversity</a>
+                <a href="https://www.kiln.fi/post/ethereum-client-diversity-part-1-consensus-finalization" target="_blank">Ethereum Client Diversity Part 1: Consensus and Finalization</a>
+                <a href="https://www.kiln.fi/post/ethereum-client-diversity-part-2-execution-layer-diversity" target="_blank">Ethereum Client Diversity Part 2: Execution-layer Diversity</a>
+                <a href="https://www.kiln.fi/post/ethereum-client-diversity-part-3-consensus-layer-diversity" target="_blank">Ethereum Client Diversity Part 3: Consensus-layer Diversity</a>
             </li>
         </ul>
     </div>
