@@ -103,7 +103,7 @@
     }
 
     ul>li>span {
-        @apply mb-2 block
+        @apply mb-2
     }
 
     a {
