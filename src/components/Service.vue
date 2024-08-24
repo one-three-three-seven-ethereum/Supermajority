@@ -62,16 +62,11 @@
     const removeMenu = ref<typeof Menu | null>(null)
 
     const addMenuItems = computed(() => {
-        let options = ['Geth', 'Nethermind', 'Besu', 'Erigon', 'Reth', 'Unknown']
-
-        if (service.name === "Rocket Pool") {  // Easter Egg
-            options = ['Geth', 'Nethermind', 'Besu', 'Erigon', 'rETH', 'Unknown']
-        }
-
+        let options = ['Geth', 'Nethermind', 'Besu', 'Erigon', 'Reth', 'Unknown', 'Cross-Validation']
         const list: MenuItem[] = []
 
         options.forEach(name => {
-            if (!service.allocation.find(client => client.name === name.replace('rETH', 'Reth'))) { // Easter Egg
+            if (!service.allocation.find(client => client.name === name)) {
                 list.push({ label: name, command: addCommand })
             }
         })
@@ -159,10 +154,6 @@
         })
 
         let name = event.item.label as string
-
-        if (name === "rETH") { // Easter Egg
-            name = "Reth"
-        }
 
         service.allocation.push({
             name,
