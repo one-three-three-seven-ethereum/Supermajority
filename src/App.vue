@@ -68,8 +68,8 @@
         @apply bg-purple-500
     }
 
-    .Minority{
-        @apply bg-lime-500
+    .Cross-Validation {
+        @apply bg-lime-400
     }
 
     .Unknown {

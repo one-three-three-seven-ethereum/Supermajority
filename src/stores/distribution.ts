@@ -8,7 +8,7 @@ export const useDistributionStore = defineStore('distribution', () => {
     const services: Ref<Service[]> = ref([])
 
     const allocation = computed(() => {
-        const map = new Map<string, number>().set('Unknown', 0).set('Geth', 0).set('Nethermind', 0).set('Besu', 0).set('Erigon', 0).set('Reth', 0)
+        const map = new Map<string, number>().set('Unknown', 0).set('Nethermind', 0).set('Geth', 0).set('Besu', 0).set('Erigon', 0).set('Reth', 0).set('Cross-Validation', 0)
 
         services.value.forEach(service => {
             service.allocation.forEach(client => {
