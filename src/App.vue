@@ -49,31 +49,31 @@
     }
 
     .Geth {
-        @apply bg-red-500
+        background-color: #CC79A7;
     }
 
     .Nethermind {
-        @apply bg-blue-500
+        background-color: #0072B2;
     }
 
     .Besu {
-        @apply bg-green-500
+        background-color: #009E73;
     }
 
     .Erigon {
-        @apply bg-slate-500
+        background-color: #F0E442;
     }
 
     .Reth {
-        @apply bg-purple-500
+        background-color: #56B4E9;
     }
 
     .Cross-Validation {
-        @apply bg-lime-400
+        background-color: #D55E00;
     }
 
     .Unknown {
-        @apply bg-orange-500
+        background-color: #E69F00;
     }
 
     .v-popper__popper .v-popper__inner {
