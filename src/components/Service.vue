@@ -40,7 +40,7 @@
         <Button icon="pi pi-minus" severity="secondary" outlined class="ml-2 self-end w-8 h-8 mb-1" :disabled="removeMenuItems.length === 1" @click="toggleRemoveMenu" />
         <Menu ref="removeMenu" :model="removeMenuItems" :popup="true" />
     </div>
-    <template v-if="['Kraken', 'OKX', 'Binance'].includes(service.name)">
+    <template v-if="['Kraken', 'OKX'].includes(service.name)">
         <span class="text-base font-bold">*Risky! No public data available.</span>
     </template>
 </template>
