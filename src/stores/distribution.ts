@@ -12,7 +12,7 @@ export const useDistributionStore = defineStore('distribution', () => {
 
         services.value.forEach(service => {
             service.allocation.forEach(client => {
-                map.set(client.name, (map.get(client.name) || 0) + client.count);
+                map.set(client.name, (map.get(client.name) || 0) + client.count)
             })
         })
 
@@ -74,12 +74,37 @@ export const useDistributionStore = defineStore('distribution', () => {
             included += count
         })
 
+        const unlisted = totalValidators - included
+
+        // Based on graffiti data
         services.value.push({
             name: 'Unlisted Entities',
-            allocation: [{
-                name: 'Unknown',
-                count: totalValidators - included
-            }]
+            allocation: [
+                {
+                    name: 'Nethermind',
+                    count: Math.floor(unlisted * 0.1178)
+                },
+                {
+                    name: 'Geth',
+                    count: Math.floor(unlisted * 0.1021)
+                },
+                {
+                    name: 'Besu',
+                    count: Math.floor(unlisted * 0.0217)
+                },
+                {
+                    name: 'Reth',
+                    count: Math.floor(unlisted * 0.008)
+                },
+                {
+                    name: 'Unknown',
+                    count: Math.floor(unlisted * 0.7504)
+                },
+                // {
+                //     name: 'Erigon',
+                //     count: unlisted * 0
+                // }
+            ]
         })
     }
 
