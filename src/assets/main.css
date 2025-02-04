@@ -1,9 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer components {
-    .link {
-        @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
-    }
+@utility link {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
+}
+
+h1 {
+  @apply text-3xl font-bold
+}
+
+h2 {
+  @apply text-2xl font-bold
+}
+
+h3 {
+  @apply text-xl font-bold
+}
+
+h4 {
+  @apply text-xl
+}
+
+ul {
+  @apply list-none
+}
+
+.Geth {
+  background-color: #CC79A7;
+}
+
+.Nethermind {
+  background-color: #0072B2;
+}
+
+.Besu {
+  background-color: #009E73;
+}
+
+.Erigon {
+  background-color: #F0E442;
+}
+
+.Reth {
+  background-color: #56B4E9;
+}
+
+.Cross-Validation {
+  background-color: #D55E00;
+}
+
+.Unknown {
+  background-color: #E69F00;
 }

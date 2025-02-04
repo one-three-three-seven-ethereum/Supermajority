@@ -1,12 +1,12 @@
 <template>
     <div class="flex-1 flex flex-col min-w-80 m-5">
-        <hr class="h-1 mb-4 bg-zinc-500">
+        <hr class="h-1 mb-4 border-0 bg-zinc-500">
 
-        <span class="mb-2 text-base">Info: No client should have a possible share ("Max") above 66.6%!</span>
+        <span class="mb-2">Info: No client should have a possible share ("Max") above 66.6%!</span>
 
         <template v-for="client in distribution">
             <div class="flex justify-between">
-                <span>{{ client.name }}</span>
+                <span class="text-lg">{{ client.name }}</span>
                 <span class="font-bold" v-if="client.shareMax >= 2 / 3 * 100">Risky!</span>
                 <span>Min: {{ client.shareMinFormatted }} | Max: {{ client.shareMaxFormatted }}</span>
             </div>
@@ -20,9 +20,9 @@
             </div>
         </template>
 
-        <hr class="h-1 mt-2 bg-zinc-500">
+        <hr class="h-1 mt-2 border-0 bg-zinc-500">
 
-        <span class="my-4 text-base">Info: The list indirectly includes Lido (<a class="text-base link" href="https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest?tab=client-diversity#execution-layer" target="_blank">view data</a>) by listing all its operators</span>
+        <span class="my-4">Info: The list indirectly includes Lido (<a class="link" href="https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest?tab=client-diversity#execution-layer" target="_blank">view data</a>) by listing all its operators</span>
 
         <ul>
             <template v-for="service in sortedServices">

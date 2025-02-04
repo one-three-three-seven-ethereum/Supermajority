@@ -8,7 +8,7 @@
                 <template v-else>
                     <a :href="service.website" target="_blank">{{ service.name }}</a>
                 </template>
-                <span class="ml-1 mr-auto text-base" v-tooltip="{ content: 'Market Share', delay: 0, triggers: ['hover', 'click'] }">({{ service.marketShareFormatted }})</span>
+                <span class="ml-1 mr-auto" v-tooltip="{ content: 'Market Share', delay: 0, triggers: ['hover', 'click'] }">({{ service.marketShareFormatted }})</span>
 
                 <template v-if="service.twitter">
                     <a :href="service.twitter" target="_blank" v-tooltip="{ content: 'Twitter', delay: 0 }">
@@ -41,10 +41,10 @@
         <Menu ref="removeMenu" :model="removeMenuItems" :popup="true" />
     </div>
     <template v-if="['Unlisted Entities', 'Binance'].includes(service.name)">
-        <span class="text-base font-bold">*Based on graffiti data.</span>
+        <span class="font-bold">*Based on graffiti data.</span>
     </template>
     <template v-if="['Kraken', 'OKX'].includes(service.name)">
-        <span class="text-base font-bold">*Risky! No public data available.</span>
+        <span class="font-bold">*Risky! No public data available.</span>
     </template>
 </template>
 
