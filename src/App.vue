@@ -4,24 +4,10 @@
     <a href="https://github.com/one-three-three-seven-ethereum/Supermajority" class="mx-auto" target="_blank">
         <span class="pi pi-github" style="font-size: 1.5rem" />
     </a>
-    <div class="flex flex-wrap justify-center">
-        <Suspense>
-            <template #default>
-                <List />
-            </template>
-            <template #fallback>
-                <Fallback />
-            </template>
-        </Suspense>
-        <FAQ />
+    <div class="flex flex-wrap justify-center h-full">
+        <RouterView />
     </div>
 </template>
-
-<script setup lang="ts">
-import Fallback from '@/components/Fallback.vue'
-import List from '@/components/List.vue'
-import FAQ from '@/components/FAQ.vue'
-</script>
 
 <style>
 @reference "@/assets/main.css";

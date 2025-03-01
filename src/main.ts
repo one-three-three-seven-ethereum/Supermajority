@@ -8,10 +8,12 @@ import { createPinia } from 'pinia'
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 import FloatingVue from 'floating-vue'
+import { router } from './routes'
 import App from './App.vue'
 
 const app = createApp(App)
 app.use(PrimeVue, { theme: { preset: Aura, options: { darkModeSelector: '.dark-mode-not-implemented' } } })
 app.use(createPinia())
 app.use(FloatingVue)
+app.use(router)
 app.mount('#app')

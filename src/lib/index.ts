@@ -35,3 +35,10 @@ export interface Service {
     marketShareFormatted?: string;
     allocation: Allocation[];
 }
+
+export type Day = {
+    date: string
+    clients: {
+        [name: string]: number
+    }
+}
