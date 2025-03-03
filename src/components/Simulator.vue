@@ -1,11 +1,11 @@
 <template>
     <div class="flex-1 min-w-80 m-5 flex flex-col items-center">
-        <Message severity="warn">The market shares shown for each client are approximate estimates.</Message>
-        <Message class="mt-2 max-w-xl" severity="info">This tool highlights the benefits of client diversity and shows that clients with lower market shares are less likely to be part of a problematic supermajority chain.</Message>
+        <Message closable severity="warn">The market shares shown for each client are approximate estimates.</Message>
+        <Message closable class="mt-2 max-w-xl" severity="info">This tool highlights the benefits of client diversity and shows that clients with lower market shares are less likely to be part of a problematic supermajority chain.</Message>
         <span v-if="executionToast || consensusToast" class="flex text-9xl text-red-500">X</span>
         <span v-else class="flex text-9xl text-green-500">✓</span>
 
-        <Message severity="info">All faulty clients are assumed to have the same consensus bug.</Message>
+        <Message closable severity="info">All faulty clients are assumed to have the same consensus bug.</Message>
 
         <div class="flex flex-row flex-wrap justify-center">
             <template v-for="clients in [consensusClients, executionClients]">
