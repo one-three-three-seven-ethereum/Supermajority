@@ -5,29 +5,6 @@
         <span v-if="executionToast || consensusToast" class="flex text-9xl text-red-500">X</span>
         <span v-else class="flex text-9xl text-green-500">✓</span>
 
-        <Card class="m-2">
-            <template #content>
-                <label>
-                    <Checkbox v-model="perfectDistribution" binary />
-                    Assume perfect client distribution
-                </label>
-            </template>
-        </Card>
-
-        <Card class="m-2">
-            <template #content>
-                <div class="flex flex-col items-center">
-                    <label>
-                        <Checkbox v-model="multiNode" binary />
-                        Attestation Consensus Threshold
-                    </label>
-                    <span class="text-sm">(You only attest if this number of your clients agree with each other.)</span>
-                    <InputNumber class="mt-2" v-model="multiNodeCount" showButtons buttonLayout="horizontal" :min="2" :max="6" />
-                    <!-- <span class="text-red-500">Threshold > Selected Clients</span> -->
-                </div>
-            </template>
-        </Card>
-
         <Message severity="info">All faulty clients are assumed to have the same consensus bug.</Message>
 
         <div class="flex flex-row flex-wrap justify-center">
@@ -61,6 +38,30 @@
                 </Card>
             </template>
         </div>
+
+        <Card class="m-2">
+            <template #content>
+                <div class="flex flex-col items-center">
+                    <label>
+                        <Checkbox v-model="multiNode" binary />
+                        Attestation Consensus Threshold
+                    </label>
+                    <InputNumber class="mt-2" v-model="multiNodeCount" showButtons buttonLayout="horizontal" :min="2" :max="6" />
+                    <span class="text-sm">(You only attest if this number of your clients agree with each other.)</span>
+                    <a class="link" href="https://github.com/serenita-org/vero" target="_blank">Vero</a>
+                    <a class="link" href="https://github.com/attestantio/vouch" target="_blank">Vouch (Majority Strategy)</a>
+                </div>
+            </template>
+        </Card>
+
+        <Card class="m-2">
+            <template #content>
+                <label>
+                    <Checkbox v-model="perfectDistribution" binary />
+                    Assume perfect client distribution
+                </label>
+            </template>
+        </Card>
     </div>
 </template>
 
