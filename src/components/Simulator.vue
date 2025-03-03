@@ -22,7 +22,7 @@
                         Attestation Consensus Threshold
                     </label>
                     <span class="text-sm">(You only attest if this number of your clients agree with each other.)</span>
-                    <InputNumber class="mt-2" v-model="multiNodeCount" showButtons buttonLayout="horizontal" :min="1" :max="6" />
+                    <InputNumber class="mt-2" v-model="multiNodeCount" showButtons buttonLayout="horizontal" :min="2" :max="6" />
                     <!-- <span class="text-red-500">Threshold > Selected Clients</span> -->
                 </div>
             </template>
@@ -74,7 +74,7 @@ import Checkbox from 'primevue/checkbox'
 import InputNumber from 'primevue/inputnumber'
 import { computed, ref, watch, type Ref } from 'vue'
 const perfectDistribution = ref(false)
-const multiNodeCount = ref(1)
+const multiNodeCount = ref(2)
 const multiNode = ref(false)
 
 const defaultExecutionClients = [
