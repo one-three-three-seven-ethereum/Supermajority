@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import HomeView from './components/Home.vue'
-import ToastView from './components/Toast.vue'
-import GraffitiView from './components/Graffiti.vue'
+import Home from './components/Home.vue'
+import Simulator from './components/Simulator.vue'
+import Graffiti from './components/Graffiti.vue'
+import FAQ from './components/FAQ.vue'
 
 const routes = [
-    { path: '/', component: HomeView },
-    { path: '/toast', component: ToastView },
-    { path: '/graffiti', component: GraffitiView }
+    { path: '/', component: Home },
+    { path: '/simulator', component: Simulator },
+    { path: '/graffiti', component: Graffiti },
+    { path: '/faq', component: FAQ }
 ]
 
 export const router = createRouter({

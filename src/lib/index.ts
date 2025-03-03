@@ -5,35 +5,35 @@ export const numberToPercent = new Intl.NumberFormat('en-US', {
 })
 
 export interface TotalDistribution {
-    name: string;
-    countMin: number;
-    countMax: number;
-    shareMin: number;
-    shareMax: number;
-    shareMinFormatted: string;
-    shareMaxFormatted: string;
+    name: string
+    countMin: number
+    countMax: number
+    shareMin: number
+    shareMax: number
+    shareMinFormatted: string
+    shareMaxFormatted: string
 }
 
 export interface ServiceDistribution {
-    name: string;
-    count: number;
-    share: number;
-    shareFormatted: string;
+    name: string
+    count: number
+    share: number
+    shareFormatted: string
 }
 
 export interface Allocation {
-    name: string;
-    count: number;
+    name: string
+    count: number
 }
 
 export interface Service {
-    name: string;
-    website?: string;
-    source?: string;
-    twitter?: string;
-    validators?: number;
-    marketShareFormatted?: string;
-    allocation: Allocation[];
+    name: string
+    website?: string
+    source?: string
+    twitter?: string
+    validators?: number
+    marketShareFormatted?: string
+    allocation: Allocation[]
 }
 
 export type Day = {
@@ -41,4 +41,11 @@ export type Day = {
     clients: {
         [name: string]: number
     }
+}
+
+export type Client = {
+    name: string
+    share: number
+    checked: boolean
+    faulty: boolean
 }

@@ -1,9 +1,6 @@
 <template>
-    <div v-if="showFAQ" class="flex-1 min-w-80 m-5">
-        <div class="flex justify-between">
-            <h2>FAQ</h2>
-            <Button type="button" icon="pi pi-times" severity="secondary" outlined class="w-8 h-8" @click="() => showFAQ = false" v-tooltip="{ content: 'Hide FAQ', delay: 0 }" />
-        </div>
+    <div class="p-5">
+        <h2>FAQ</h2>
         <ul>
             <li>
                 <h3>What is this website about?</h3>
@@ -85,13 +82,6 @@
         </ul>
     </div>
 </template>
-
-<script setup lang="ts">
-import Button from 'primevue/button'
-import { ref } from 'vue'
-
-const showFAQ = ref(true)
-</script>
 
 <style scoped>
 @reference "@/assets/main.css";

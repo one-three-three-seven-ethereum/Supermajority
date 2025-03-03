@@ -7,13 +7,11 @@
             <Fallback />
         </template>
     </Suspense>
-    <FAQ />
 </template>
 
 <script setup lang="ts">
 import Fallback from '@/components/Fallback.vue'
 import List from '@/components/List.vue'
-import FAQ from '@/components/FAQ.vue'
 </script>
 
 <style>
