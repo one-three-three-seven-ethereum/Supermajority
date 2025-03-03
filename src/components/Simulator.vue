@@ -30,7 +30,7 @@
 
         <Message severity="info">All faulty clients are assumed to have the same consensus bug.</Message>
 
-        <div class="flex flex-row">
+        <div class="flex flex-row flex-wrap justify-center">
             <template v-for="clients in [consensusClients, executionClients]">
                 <Card class="m-2">
                     <template #content>
