@@ -596,16 +596,16 @@
   {
     "name": "Coinbase",
     "website": "https://coinbase.com/earn/staking/ethereum",
-    "source": "https://twitter.com/CoinbaseCloud/status/1770866720246219152",
+    "source": "https://coinbase.com/de/blog/ethereum-validator-performance-report",
     "twitter": "https://twitter.com/coinbase",
     "allocation": [
       {
         "name": "Geth",
-        "count": 58489
+        "count": 43440
       },
       {
         "name": "Nethermind",
-        "count": 58489
+        "count": 76560
       }
     ]
   },
