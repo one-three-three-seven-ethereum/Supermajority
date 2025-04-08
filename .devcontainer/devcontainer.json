@@ -1,0 +1,8 @@
+{
+	"name": "NodeJS & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	"workspaceMount": "",
+	"runArgs": [
+  		"--volume=${localWorkspaceFolder}:/workspaces/${localWorkspaceFolderBasename}:z"
+	]
+}

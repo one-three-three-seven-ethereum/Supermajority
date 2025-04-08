@@ -21,7 +21,7 @@
                     </a>
                 </template>
             </div>
-            <splitpanes :key="splitpaneKey" class="default-theme" @resize="resize" @resized="resized" :dbl-click-splitter="false" :push-other-panes="false">
+            <splitpanes :key="splitpaneKey" class="default-theme" @resize="resize" @resized="resized" :maximize-panes="false">
                 <template v-for="(client, index) in distribution">
                     <pane :size="client.share">
                         <div :class="`h-10 ${client.name}`" v-tooltip="{
@@ -120,7 +120,7 @@
         const previousTotalCount = totalCount.value // totalCount changes during the for loop; a copy of it is needed
 
         for (let i = 0; i < service.allocation.length; i++) {
-            service.allocation[i].count = Math.round(previousTotalCount * event[i].size / 100)
+            service.allocation[i].count = Math.round(previousTotalCount * event.panes[i].size / 100)
         }
     }
 

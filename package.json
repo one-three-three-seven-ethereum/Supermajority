@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@primevue/themes": "^4.0.4",
+    "@primeuix/themes": "^1.0.0",
     "floating-vue": "^5.2.2",
     "pinia": "^3.0.1",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.4",
-    "splitpanes": "^3.1.5",
+    "splitpanes": "^4.0.3",
     "vue": "^3.4.35",
     "vue-echarts": "^7.0.3",
     "vue-router": "^4.5.0"
