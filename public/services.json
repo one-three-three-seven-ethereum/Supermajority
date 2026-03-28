@@ -7,11 +7,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 4304
+        "count": 4068
       },
       {
         "name": "Nethermind",
-        "count": 4156
+        "count": 2625
+      },
+      {
+        "name": "Reth",
+        "count": 225
       }
     ]
   },
@@ -23,7 +27,7 @@
     "allocation": [
       {
         "name": "Besu",
-        "count": 30504
+        "count": 6967
       }
     ]
   },
@@ -34,12 +38,16 @@
     "twitter": "https://twitter.com/attestantio",
     "allocation": [
       {
+        "name": "Geth",
+        "count": 1742
+      },
+      {
         "name": "Nethermind",
-        "count": 4230
+        "count": 3483
       },
       {
         "name": "Besu",
-        "count": 4230
+        "count": 1742
       }
     ]
   },
@@ -51,11 +59,7 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 4363
-      },
-      {
-        "name": "Besu",
-        "count": 4097
+        "count": 6967
       }
     ]
   },
@@ -67,7 +71,19 @@
     "allocation": [
       {
         "name": "Besu",
-        "count": 8461
+        "count": 6217
+      },
+      {
+        "name": "Geth",
+        "count": 250
+      },
+      {
+        "name": "Nethermind",
+        "count": 250
+      },
+      {
+        "name": "Reth",
+        "count": 250
       }
     ]
   },
@@ -91,11 +107,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 5956
+        "count": 4592
       },
       {
         "name": "Nethermind",
-        "count": 2498
+        "count": 2375
       }
     ]
   },
@@ -111,11 +127,11 @@
       },
       {
         "name": "Nethermind",
-        "count": 5847
+        "count": 5023
       },
       {
         "name": "Besu",
-        "count": 1813
+        "count": 1144
       }
     ]
   },
@@ -127,19 +143,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 1365
+        "count": 248
       },
       {
         "name": "Nethermind",
-        "count": 3014
-      },
-      {
-        "name": "Besu",
-        "count": 1962
+        "count": 3965
       },
       {
         "name": "Reth",
-        "count": 2104
+        "count": 2754
       }
     ]
   },
@@ -151,11 +163,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 14700
+        "count": 3477
       },
       {
         "name": "Besu",
-        "count": 20300
+        "count": 3490
       }
     ]
   },
@@ -167,11 +179,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 4000
+        "count": 2000
       },
       {
         "name": "Nethermind",
-        "count": 4461
+        "count": 4967
       }
     ]
   },
@@ -180,8 +192,12 @@
     "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
     "allocation": [
       {
+        "name": "Geth",
+        "count": 3488
+      },
+      {
         "name": "Nethermind",
-        "count": 8460
+        "count": 3479
       }
     ]
   },
@@ -193,11 +209,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 5217
+        "count": 3831
       },
       {
         "name": "Nethermind",
-        "count": 3243
+        "count": 3135
       }
     ]
   },
@@ -208,12 +224,16 @@
     "twitter": "https://twitter.com/everstake_pool",
     "allocation": [
       {
+        "name": "Besu",
+        "count": 2000
+      },
+      {
         "name": "Geth",
-        "count": 4230
+        "count": 740
       },
       {
         "name": "Nethermind",
-        "count": 4230
+        "count": 4227
       }
     ]
   },
@@ -224,8 +244,12 @@
     "twitter": "https://twitter.com/Figment_io",
     "allocation": [
       {
-        "name": "Erigon",
-        "count": 8460
+        "name": "Geth",
+        "count": 5522
+      },
+      {
+        "name": "Reth",
+        "count": 1445
       }
     ]
   },
@@ -237,15 +261,15 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 2817
+        "count": 2327
       },
       {
         "name": "Besu",
-        "count": 2817
+        "count": 2320
       },
       {
         "name": "Reth",
-        "count": 2817
+        "count": 2320
       }
     ]
   },
@@ -257,15 +281,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 2820
+        "count": 2321
       },
       {
         "name": "Nethermind",
-        "count": 4320
+        "count": 3253
       },
       {
         "name": "Erigon",
-        "count": 1320
+        "count": 1392
       }
     ]
   },
@@ -277,11 +301,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 3960
+        "count": 3500
       },
       {
         "name": "Besu",
-        "count": 4500
+        "count": 3409
+      },
+      {
+        "name": "Nethermind",
+        "count": 58
       }
     ]
   },
@@ -293,7 +321,7 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 8460
+        "count": 6967
       }
     ]
   },
@@ -317,11 +345,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 5228
+        "count": 3926
       },
       {
         "name": "Nethermind",
-        "count": 3232
+        "count": 3041
       }
     ]
   },
@@ -333,7 +361,7 @@
     "allocation": [
       {
         "name": "Besu",
-        "count": 8460
+        "count": 6967
       }
     ]
   },
@@ -369,11 +397,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 8978
+        "count": 1865
       },
       {
         "name": "Besu",
-        "count": 26886
+        "count": 1805
+      },
+      {
+        "name": "Nethermind",
+        "count": 3297
       }
     ]
   },
@@ -385,7 +417,31 @@
     "allocation": [
       {
         "name": "Nethermind",
-        "count": 8460
+        "count": 6966
+      }
+    ]
+  },
+  {
+    "name": "Pier Two",
+    "website": "https://piertwo.com/",
+    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "twitter": "https://x.com/piertwo_com",
+    "allocation": [
+      {
+        "name": "Nethermind",
+        "count": 6966
+      }
+    ]
+  },
+  {
+    "name": "Prysm",
+    "website": "https://www.offchainlabs.com/prysm",
+    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "twitter": "https://x.com/prylabs",
+    "allocation": [
+      {
+        "name": "Geth",
+        "count": 6967
       }
     ]
   },
@@ -397,15 +453,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 1989
+        "count": 1515
       },
       {
         "name": "Nethermind",
-        "count": 1748
+        "count": 3452
       },
       {
         "name": "Besu",
-        "count": 4723
+        "count": 2000
       }
     ]
   },
@@ -417,11 +473,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 6367
+        "count": 4156
       },
       {
         "name": "Nethermind",
-        "count": 2093
+        "count": 2811
       }
     ]
   },
@@ -433,11 +489,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 2820
+        "count": 3483
       },
       {
         "name": "Nethermind",
-        "count": 5640
+        "count": 3483
       }
     ]
   },
@@ -449,11 +505,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 2800
+        "count": 5829
       },
       {
         "name": "Nethermind",
-        "count": 5660
+        "count": 1138
       }
     ]
   },
@@ -465,15 +521,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 1691
+        "count": 1741
       },
       {
         "name": "Nethermind",
-        "count": 5073
+        "count": 3485
       },
       {
         "name": "Besu",
-        "count": 1691
+        "count": 1741
       }
     ]
   },
@@ -485,11 +541,23 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 5231
+        "count": 4648
       },
       {
         "name": "Nethermind",
-        "count": 3225
+        "count": 2319
+      }
+    ]
+  },
+  {
+    "name": "Solstice",
+    "website": "https://solsticestaking.io/",
+    "source": "https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest",
+    "twitter": "https://x.com/solsticestaking",
+    "allocation": [
+      {
+        "name": "Nethermind",
+        "count": 6967
       }
     ]
   },
@@ -501,15 +569,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 3000
+        "count": 764
       },
       {
         "name": "Nethermind",
-        "count": 4225
+        "count": 4828
       },
       {
         "name": "Erigon",
-        "count": 1235
+        "count": 1375
       }
     ]
   },
@@ -521,7 +589,7 @@
     "allocation": [
       {
         "name": "Besu",
-        "count": 8445
+        "count": 6967
       }
     ]
   },
@@ -533,11 +601,15 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 5610
+        "count": 3483
       },
       {
         "name": "Nethermind",
-        "count": 2846
+        "count": 1742
+      },
+      {
+        "name": "Reth",
+        "count": 1742
       }
     ]
   },
@@ -549,11 +621,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 16132
+        "count": 3227
       },
       {
         "name": "Nethermind",
-        "count": 16132
+        "count": 3740
       }
     ]
   },
@@ -670,11 +742,11 @@
     "allocation": [
       {
         "name": "Geth",
-        "count": 3206
+        "count": 2321
       },
       {
         "name": "Nethermind",
-        "count": 3206
+        "count": 4646
       }
     ]
   },
