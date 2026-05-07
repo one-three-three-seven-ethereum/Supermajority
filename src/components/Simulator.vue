@@ -8,14 +8,14 @@
         <Message closable severity="info">All faulty clients are assumed to have the same consensus bug.</Message>
 
         <div class="flex flex-row flex-wrap justify-center">
-            <template v-for="clients in [consensusClients, executionClients]">
+            <template v-for="(clients, index) in [consensusClients, executionClients]" :key="index">
                 <Card class="m-2">
                     <template #content>
                         <div class="flex flex-row">
                             <div>
                                 <span class="font-bold">You use:</span>
                                 <div class="flex flex-col mb-2">
-                                    <template v-for="client in clients">
+                                    <template v-for="client in clients" :key="client.name">
                                         <div class="my-0.5">
                                             <label>
                                                 <Checkbox v-model="client.checked" binary />
@@ -28,7 +28,7 @@
                             <div>
                                 <span class="font-bold">Faulty:</span>
                                 <div class="flex flex-col items-center">
-                                    <template v-for="client in clients">
+                                    <template v-for="client in clients" :key="client.name">
                                         <Checkbox class="my-1" v-model="client.faulty" binary />
                                     </template>
                                 </div>
@@ -87,13 +87,16 @@ const defaultExecutionClients = [
 ]
 
 const defaultConsensusClients = [
-    { name: 'Lighthouse ', share: 0.32, checked: false, faulty: false },
+    { name: 'Lighthouse', share: 0.32, checked: false, faulty: false },
     { name: 'Prysm', share: 0.31, checked: false, faulty: false },
     { name: 'Teku', share: 0.27, checked: false, faulty: false },
     { name: 'Nimbus', share: 0.06, checked: false, faulty: false },
     { name: 'Grandine', share: 0.02, checked: false, faulty: false },
     { name: 'Lodestar', share: 0.02, checked: false, faulty: false },
 ]
+
+const executionClients = ref<Client[]>(structuredClone(defaultExecutionClients))
+const consensusClients = ref<Client[]>(structuredClone(defaultConsensusClients))
 
 watch(perfectDistribution, (checked) => {
     if (checked) {
@@ -108,9 +111,6 @@ watch(perfectDistribution, (checked) => {
         consensusClients.value = structuredClone(defaultConsensusClients)
     }
 })
-
-const executionClients = ref<Client[]>(structuredClone(defaultExecutionClients))
-const consensusClients = ref<Client[]>(structuredClone(defaultConsensusClients))
 
 const executionToast = computed(() => isToast(executionClients))
 const consensusToast = computed(() => isToast(consensusClients))

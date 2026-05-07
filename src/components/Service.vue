@@ -22,7 +22,7 @@
                 </template>
             </div>
             <splitpanes :key="splitpaneKey" class="default-theme" @resize="resize" @resized="resized" :maximize-panes="false">
-                <template v-for="(client, index) in distribution">
+                <template v-for="(client, index) in distribution" :key="client.name">
                     <pane :size="client.share">
                         <div :class="`h-10 ${client.name}`" v-tooltip="{
                             content: `${client.name} ${client.shareFormatted} (${client.count})`,
@@ -56,7 +56,7 @@
     import { computed, ref } from 'vue'
     import Menu from 'primevue/menu'
 
-    const { service } = defineProps<({ service: Service })>()
+    const { service } = defineProps<{ service: Service }>()
 
     const wavePattern = ref(false)
     const showTooltips = ref(false)
@@ -114,7 +114,7 @@
         return totalCount
     })
 
-    function resize(event: any) {
+    function resize(event: { panes: { size: number }[] }) {
         showTooltips.value = true
         wavePattern.value = true
         const previousTotalCount = totalCount.value // totalCount changes during the for loop; a copy of it is needed
@@ -145,9 +145,8 @@
         }
     }
 
-    //Reduce the count af all existing clients by 20% and add them to the new client
+    //Reduce the count of all existing clients by 20% and add them to the new client
     function addCommand(event: MenuItemCommandEvent) {
-
         let add = 0
 
         service.allocation.forEach(client => {
@@ -156,7 +155,7 @@
             add += reduce
         })
 
-        let name = event.item.label as string
+        const name = event.item.label as string
 
         service.allocation.push({
             name,
@@ -168,7 +167,7 @@
 
     //Remove the client and add the count to the first remaining client
     function removeCommand(event: MenuItemCommandEvent) {
-        const index = service.allocation.findIndex(client => client.name === event.item.label);
+        const index = service.allocation.findIndex(client => client.name === event.item.label)
         const add = service.allocation[index].count
 
         service.allocation.splice(index, 1)
