@@ -51,8 +51,7 @@ const option = ref({
     ],
     yAxis: [
         {
-            type: 'value',
-            name: 'Blocks per day'
+            type: 'value'
         }
     ],
     series,
@@ -75,6 +74,7 @@ const option = ref({
     },
     legend: {
         show: true,
+        top: 0,
         selected: { 'Prysm': false, 'Lighthouse': false, 'Teku': false, 'Nimbus': false, 'Lodestar': false, 'Grandine': false }
     }
 })
