@@ -32,8 +32,8 @@
             <li>
                 <h3>If I switch to a minority client, where can I find support?</h3>
                 <span>All of the clients have dedicated Discord communities where help is provided by the team and other users.</span>
-                <a href="https://discord.com/invite/hyperledger">Besu</a>
-                <a href="https://github.com/ledgerwatch/erigon#erigon-discord-server">Erigon</a>
+                <a href="https://discord.com/invite/hyperledger" target="_blank">Besu</a>
+                <a href="https://github.com/ledgerwatch/erigon#erigon-discord-server" target="_blank">Erigon</a>
             </li>
             <li>
                 <h3>Is it possible to resolve a supermajority consensus bug through a hard fork?</h3>

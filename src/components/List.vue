@@ -4,7 +4,7 @@
 
         <span class="mb-2">Info: No client should have a possible share ("Max") above 66.6%!</span>
 
-        <template v-for="client in distribution">
+        <template v-for="client in distribution" :key="client.name">
             <div class="flex justify-between">
                 <span class="text-lg">{{ client.name }}</span>
                 <span class="font-bold" v-if="client.shareMax >= 2 / 3 * 100">Risky!</span>
@@ -25,7 +25,7 @@
         <span class="my-4">Info: The list indirectly includes Lido (<a class="link" href="https://app.hex.tech/8dedcd99-17f4-49d8-944e-4857a355b90a/app/3f7d6967-3ef6-4e69-8f7b-d02d903f045b/latest?tab=client-diversity#execution-layer" target="_blank">view data</a>) by listing all its operators</span>
 
         <ul>
-            <template v-for="service in sortedServices">
+            <template v-for="service in sortedServices" :key="service.name">
                 <li class="mb-2">
                     <ServiceComponent :service="service" />
                 </li>
